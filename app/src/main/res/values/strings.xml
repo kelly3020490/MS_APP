@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MS_APP</string>
+    <string name="etname">請輸入帳號</string>
+    <string name="etpsd">請輸入密碼</string>
+    <string name="login_btn">登入</string>
+</resources>
