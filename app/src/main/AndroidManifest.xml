@@ -6,11 +6,56 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:largeHeap="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".More"
+            android:label="@string/app_name_more"
+            android:parentActivityName=".Home">
 
+        </activity>
+        <activity
+            android:name=".School_Calendar"
+            android:label="@string/app_name_calendar"
+            android:parentActivityName=".Home"></activity>
+        <activity
+            android:name=".Info"
+            android:label="@string/app_name_info"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Schedule"
+            android:label="@string/app_name_schedule"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name_menu"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".QRcode"
+            android:label="@string/app_name_qrcode"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".SchoolBus"
+            android:label="@string/app_name_school_bus"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Leave"
+            android:label="@string/app_name_leave"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Medicine"
+            android:label="@string/app_name_medicine"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".SchoolBook"
+            android:label="@string/app_name_school_book"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".schoolRecord"
+            android:label="@string/app_name_school_record"
+            android:parentActivityName=".Home" />
+        <activity android:name=".Home" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

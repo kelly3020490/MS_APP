@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">MS_APP</string>
+    <string name="app_name_school_record">到離校紀錄</string>
+    <string name="app_name_school_book">親子聯絡簿</string>
+    <string name="app_name_medicine">託藥</string>
+    <string name="app_name_leave">請假</string>
+    <string name="app_name_qrcode">QR code掃描</string>
+    <string name="app_name_school_bus">幼童車即時位置</string>
+    <string name="app_name_menu">美味菜單</string>
+    <string name="app_name_schedule">作息表</string>
+    <string name="app_name_home">首頁</string>
+    <string name="app_name_info">最新消息</string>
+    <string name="app_name_calendar">行事曆</string>
+    <string name="app_name_more">更多</string>
+
     <string name="etname">請輸入帳號</string>
     <string name="etpsd">請輸入密碼</string>
     <string name="login_btn">登入</string>
+    <string name="title_home">首頁</string>
+    <string name="title_info">最新消息</string>
+    <string name="title_calendar">行事曆</string>
+    <string name="title_more">更多</string>
+    <string name="text_tvDateTime">Current date and time</string>
 </resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_st"
+    tools:context=".Home">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ImageView
+        android:id="@+id/calender1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="348dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calendar"
+        android:onClick="onCalender1"/>
+
+    <ImageView
+        android:id="@+id/schoolbook"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="348dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/schoolbook"
+        android:onClick="onschoolbook"/>
+
+    <ImageView
+        android:id="@+id/medicine"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="348dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/medicine"
+        android:onClick="onmedicine"/>
+
+    <ImageView
+        android:id="@+id/leave"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="348dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/compose"
+        android:onClick="onleave"/>
+
+    <ImageView
+        android:id="@+id/schoolbus"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="470dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/school_bus"
+        android:onClick="onschoolbus"/>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="470dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu"
+        android:onClick="onmenu"/>
+
+    <ImageView
+        android:id="@+id/schedule"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="470dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calendar3"
+        android:onClick="onschedule"/>
+
+    <ImageView
+        android:id="@+id/QRcode"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="470dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/focus"
+        android:onClick="onQRcode"/>
+
+    <TextView
+        android:id="@+id/tRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="420dp"
+        android:text="到離校紀錄"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tSchoolbook"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="420dp"
+        android:text="親子聯絡簿"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="420dp"
+        android:text="託藥"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tLeave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="420dp"
+        android:text="請假"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tQRcode"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="544dp"
+        android:text="QRcode掃描"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tschoolbus"
+        android:layout_width="74dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="548dp"
+        android:text="幼童車即時位置"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="544dp"
+        android:text="美味菜單"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="544dp"
+        android:text="作息表"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tComeSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="248dp"
+        android:text="到校"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="248dp"
+        android:text="離校"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person" />
+
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="208dp"
+        android:text="@string/text_tvDateTime"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
