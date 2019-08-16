@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg"
     tools:context=".MainActivity">
 
@@ -24,19 +23,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="90dp"
-        android:layout_height="27dp"
-        android:layout_below="@+id/meisin_Logo"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="144dp"
-
-        android:text="家長版"
-        android:textColor="@android:color/black"
-        android:textSize="22sp"
-        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/account"
@@ -47,7 +33,6 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="354dp"
         app:srcCompat="@drawable/account" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilname"
         android:layout_width="230dp"
@@ -61,8 +46,8 @@
 
         <EditText
             android:id="@+id/etname"
-            android:layout_width="268dp"
-            android:layout_height="37dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignStart="@+id/tilname"
             android:layout_alignEnd="@+id/tilname"
             android:hint="@string/etname"
@@ -106,12 +91,16 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="141dp"
         android:layout_marginEnd="128dp"
-        android:layout_marginBottom="105dp"
+        android:layout_marginBottom="110dp"
         android:background="@drawable/button_rounde"
         android:text="@string/login_btn"
         android:textSize="20sp"
         android:onClick="onLogin"/>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 </RelativeLayout>
+

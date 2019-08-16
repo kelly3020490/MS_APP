@@ -42,7 +42,7 @@ public class Home extends AppCompatActivity {
             return "0" +String.valueOf(day);
         }
     }
-    public void onCalender1(View view){
+    public void onCalender(View view){
         Intent intent = new Intent(this,schoolRecord.class);
         startActivity(intent);
 
