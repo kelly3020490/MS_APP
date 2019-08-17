@@ -196,8 +196,7 @@
                             android:text="Current date and time"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:textSize="30dp"
-                            android:textStyle="bold"/>
+                            android:textSize="30dp" />
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -226,8 +225,7 @@
                                 android:layout_height="match_parent"
                                 android:text="到校"
                                 android:gravity="left"
-                                android:textSize="24dp"
-                                android:textStyle="bold"/>
+                                android:textSize="24dp" />
                             </LinearLayout>
                             <LinearLayout
                                 android:layout_width="0dp"
@@ -243,8 +241,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="08:00"
                                     android:textSize="35dp"
-                                    android:layout_weight="3"
-                                    android:textStyle="bold"/>
+                                    android:layout_weight="3" />
 
 
                             </LinearLayout>
@@ -264,8 +261,7 @@
                                 android:layout_height="match_parent"
                                 android:text="離校"
                                 android:gravity="left"
-                                android:textSize="24dp"
-                                android:textStyle="bold"/>
+                                android:textSize="24dp" />
                             </LinearLayout>
                             <LinearLayout
                                 android:layout_width="0dp"
@@ -281,8 +277,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="16:00"
                                     android:textSize="35dp"
-                                    android:layout_weight="3"
-                                    android:textStyle="bold"/>
+                                    android:layout_weight="3" />
 
 
                             </LinearLayout>

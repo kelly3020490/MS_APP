@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,4 +16,10 @@
         layout ="@layout/toolbar_main"
         android:id="@+id/toobar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <CalendarView
+        android:id="@+id/recordcalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toobar" />
+
+</RelativeLayout>
