@@ -7,4 +7,6 @@
     <color name="green">#4CAF50</color>
     <color name="lightgreen">#09F113</color>
     <color name="orange">#FF9800</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>

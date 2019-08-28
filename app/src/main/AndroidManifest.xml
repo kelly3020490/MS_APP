@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ms_app">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,54 +13,43 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".More"
-            android:label="@string/app_name_more"
-            android:parentActivityName=".Home">
-
-        </activity>
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config">
         <activity
-            android:name=".School_Calendar"
-            android:label="@string/app_name_calendar"
-            android:parentActivityName=".Home"></activity>
-        <activity
-            android:name=".Info"
-            android:label="@string/app_name_info"
-            android:parentActivityName=".Home" />
-        <activity
-            android:name=".Schedule"
+            android:name=".schedule.Schedule"
             android:label="@string/app_name_schedule"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".home.Home" />
         <activity
-            android:name=".Menu"
+            android:name=".menu.Menu"
             android:label="@string/app_name_menu"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".home.Home" />
         <activity
-            android:name=".QRcode"
+            android:name=".QRcode.QRcode"
             android:label="@string/app_name_qrcode"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".home.Home" />
         <activity
-            android:name=".SchoolBus"
+            android:name=".schoolbus.SchoolBus"
             android:label="@string/app_name_school_bus"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".home.Home" />
         <activity
-            android:name=".Leave"
+            android:name=".leave.Leave"
             android:label="@string/app_name_leave"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".home.Home" />
         <activity
-            android:name=".Medicine"
+            android:name=".medicine.Medicine"
             android:label="@string/app_name_medicine"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".home.Home" />
         <activity
-            android:name=".SchoolBook"
+            android:name=".schoolbook.SchoolBook"
             android:label="@string/app_name_school_book"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".home.Home" />
         <activity
-            android:name=".schoolRecord"
+            android:name=".schoolrecord.schoolRecord"
             android:label="@string/app_name_school_record"
-            android:parentActivityName=".Home" />
-        <activity android:name=".Home" />
-        <activity android:name=".MainActivity">
+            android:parentActivityName=".home.Home" />
+        <activity android:name=".home.Home"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
