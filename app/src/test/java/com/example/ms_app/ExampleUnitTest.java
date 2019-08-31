@@ -17,8 +17,5 @@ public class ExampleUnitTest {
     
     
     
-    public void text() {
-    	//SSSS
-        //TTTT
-    }
+   
 }
