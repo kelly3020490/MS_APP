@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange">
+    >
 
     <include
         layout ="@layout/toolbar_main"
-        android:id="@+id/toolbar"
-        />
+        android:id="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="個人資料管理"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_below="@+id/button1"
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="變更密碼"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="141dp" />
+    <Button
+        android:layout_below="@+id/button2"
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="推播設定"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="141dp" />
+    <Button
+        android:layout_below="@+id/button3"
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="操作設定"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="141dp" />
+    <Button
+        android:layout_below="@+id/button4"
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="前往園所網站"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="141dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

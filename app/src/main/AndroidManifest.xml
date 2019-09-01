@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ms_app">
 
+    <!--模糊位置（指網路位置，如電信基地台，wifi基地台位置資訊）-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--精準位置（指GPS位置）-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,39 +16,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDkKy1LGR5WwDh4rqmXZX8R5Ob9KAPM8R8" />
+
+
         <activity android:name=".info.Info_detail"></activity>
         <activity
             android:name=".schedule.Schedule"
-            android:label="@string/app_name_schedule"
-            android:parentActivityName=".home.Home" />
+            android:label="@string/app_name_schedule" />
         <activity
             android:name=".menu.Menu"
-            android:label="@string/app_name_menu"
-            android:parentActivityName=".home.Home" />
+            android:label="@string/app_name_menu" />
         <activity
             android:name=".QRcode.QRcode"
-            android:label="@string/app_name_qrcode"
-            android:parentActivityName=".home.Home" />
+            android:label="@string/app_name_qrcode" />
         <activity
             android:name=".schoolbus.SchoolBus"
-            android:label="@string/app_name_school_bus"
-            android:parentActivityName=".home.Home" />
+            android:label="@string/app_name_school_bus" />
         <activity
             android:name=".leave.Leave"
-            android:label="@string/app_name_leave"
-            android:parentActivityName=".home.Home" />
+            android:label="@string/app_name_leave" />
         <activity
             android:name=".medicine.Medicine"
-            android:label="@string/app_name_medicine"
-            android:parentActivityName=".home.Home" />
+            android:label="@string/app_name_medicine" />
         <activity
             android:name=".schoolbook.SchoolBook"
-            android:label="@string/app_name_school_book"
-            android:parentActivityName=".home.Home" />
+            android:label="@string/app_name_school_book" />
         <activity
             android:name=".schoolrecord.schoolRecord"
-            android:label="@string/app_name_school_record"
-            android:parentActivityName=".home.Home" />
+            android:label="@string/app_name_school_record" />
         <activity
             android:name=".home.Home"
             android:theme="@style/AppTheme" />

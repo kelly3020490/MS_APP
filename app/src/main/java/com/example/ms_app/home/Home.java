@@ -1,19 +1,26 @@
 package com.example.ms_app.home;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.ms_app.info.Info;
-import com.example.ms_app.more.More;
 import com.example.ms_app.R;
+import com.example.ms_app.info.Info;
+import com.example.ms_app.main.MainActivity;
+import com.example.ms_app.main.Util;
+import com.example.ms_app.more.More;
 import com.example.ms_app.schoolcalendar.School_Calendar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -145,5 +152,37 @@ public class Home extends AppCompatActivity {
 
     }
     //----放fragment用的方法-----------------------------------------------------------------
+
+    @Override
+    //捕捉返回鍵
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+            ConfirmExit();//按返回鍵，則執行退出確認
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    public void ConfirmExit() {//退出確認
+        AlertDialog.Builder ad = new AlertDialog.Builder(Home.this);
+        ad.setTitle("登出");
+        ad.setMessage("確定要登出嗎?");
+        ad.setPositiveButton("是", new DialogInterface.OnClickListener() {//退出按鈕
+            public void onClick(DialogInterface dialog, int i) {
+                SharedPreferences preferences = getSharedPreferences(Util.PREF_FILE, MODE_PRIVATE);
+                preferences.edit().remove("login").remove("st_num").remove("st_password").apply();
+                Intent intent = new Intent(Home.this, MainActivity.class);
+                startActivity(intent);
+                finish();//關閉activity
+            }
+        });
+        ad.setNegativeButton("否", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int i) {
+                //不退出不用執行任何操作
+            }
+        });
+        ad.show();//顯示對話框
+    }
 
 }

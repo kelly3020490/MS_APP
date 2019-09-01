@@ -8,8 +8,8 @@ import android.widget.Toast;
 
 public class Util {
     // 模擬器連Tomcat
-//    public static String URL = "http://10.0.2.2:8081/DA102G4_APP/";
-    public static String URL = "http://192.168.0.3:8081/DA102G4_APP/";
+    public static String URL = "http://10.0.2.2:8081/DA102G4_APP/";
+//    public static String URL = "http://192.168.0.3:8081/DA102G4_APP/";
 
 
     // 偏好設定檔案名稱

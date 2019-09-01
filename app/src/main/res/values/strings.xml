@@ -25,4 +25,13 @@
     <string name="arrivals">到校時間</string>
     <string name="leave">離校時間</string>
     <string name="msg_NoNetwork">沒有可用的網絡連接</string>
+
+
+
+    <string name="text_NotGranted">not granted</string>
+
+
+    <string name="marker_title_meiSin">美心幼兒園</string>
+    <string name="marker_snippet_meiSin">太魯閣國家公園前身為日治時期成立之次高太魯閣國立公園，1986年11月28日成立管理處。位於台灣東部，地跨花蓮縣、台中市、南投縣三個行政區。</string>
+    <string name="title_activity_school_car">Map</string>
 </resources>

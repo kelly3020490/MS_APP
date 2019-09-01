@@ -71,9 +71,9 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/st_number"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="家長姓名"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
@@ -120,12 +120,15 @@
                 android:layout_weight="1"></LinearLayout>
 
             <TextView
+
+                android:id="@+id/st_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="野原新之助"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -141,9 +144,9 @@
             android:layout_weight="3">
 
             <ImageView
+                android:id="@+id/st_pic"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/sinjyan" />
+                android:layout_height="match_parent" />
         </LinearLayout>
     </LinearLayout>
 

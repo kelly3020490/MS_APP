@@ -131,6 +131,9 @@ public class MainActivity extends AppCompatActivity {
                     .putString("st_password", st_password).apply();
             setResult(RESULT_OK);
             Intent intent = new Intent(this, Home.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("st_num",st_num);
+            intent.putExtras(bundle);
             startActivity(intent);
             finish();
         } else {

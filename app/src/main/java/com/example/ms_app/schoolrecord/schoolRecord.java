@@ -8,7 +8,6 @@ import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -28,8 +27,6 @@ public class schoolRecord extends AppCompatActivity {
         setContentView(R.layout.activity_school_record);
         Toolbar toolbar = findViewById(R.id.toobar);
         setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
         calendarview = findViewById(R.id.recordcalendar);
         calendarview.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
